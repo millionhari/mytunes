@@ -2,6 +2,10 @@
 var SongQueue = Songs.extend({
 
   initialize: function(){
-  }
+  },
+
+  // dequeue: function(song) {
+  //   this.remove(song);
+  // }
 
 });

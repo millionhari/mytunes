@@ -13,6 +13,16 @@ var PlayerView = Backbone.View.extend({
     this.render();
   },
 
+  // events: {
+  //   'ended': function() {
+  //     // delete song from songqueue
+  //     // have songqueueview rerender
+  //     console.log('song ended');
+  //     // this.trigger('songEnded', song)
+  //     // this.songEnded();
+  //   }
+  // },
+
   render: function(){
     return this.$el.attr('src', this.model ? this.model.get('url') : '');
   }

@@ -14,17 +14,18 @@ var AppModel = Backbone.Model.extend({
 
 
     params.library.on('play', function(song){
-      console.log(song);
       if(!this.get('currentSong').attributes.hasOwnProperty('artist')){
         this.set('currentSong', song);
       }
     }, this);
 
     params.library.on('enqueue', function(song){
-      console.log(song);
       this.get('songQueue').push(song);
       console.log(this.get('songQueue'));
     }, this);
+
+    // this.get('songQueue').on()
+
   }
 
 });
